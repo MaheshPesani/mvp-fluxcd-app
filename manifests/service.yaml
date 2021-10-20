@@ -5,7 +5,7 @@ metadata:
   name: mvp-fluxcd-app
   namespace: mvp-fluxcd-app
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: mvp-fluxcd-app
   ports:
