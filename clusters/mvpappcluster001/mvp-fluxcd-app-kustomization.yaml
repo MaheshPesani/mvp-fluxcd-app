@@ -5,7 +5,7 @@ metadata:
   name: mvp-fluxcd-app
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 30s
   path: ./manifests
   prune: true
   sourceRef:
