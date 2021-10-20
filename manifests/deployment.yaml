@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mvp-fluxcd-app
+  namespace: mvp-fluxcd-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mvp-fluxcd-app
+  template:
+    metadata:
+      labels:
+        app: mvp-fluxcd-app
+    spec:
+      containers:
+        - name: mvp-fluxcd-app
+          image: "mcr.microsoft.com/dotnet/core/samples:aspnetapp"
+          ports:
+            - containerPort: 80
+              protocol: TCP
