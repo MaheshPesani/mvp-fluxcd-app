@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mvp-fluxcd-app
-          image: "mcr.microsoft.com/dotnet/core/samples:aspnetapp"
+          image: maheshpesani/sbn.web:3.0
           ports:
             - containerPort: 80
               protocol: TCP
